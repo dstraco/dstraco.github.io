@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- David Stracola -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>David Stracola</title>
+    <link rel='stylesheet' href='styles/main.css'>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="David Stracola's personal website showcasing background, skills, and projects.">
+    <meta name="keywords"
+        content="David Stracola, Software Engineer, Systems Engineer, UNCW, Computer Science, Personal Projects">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='background.html'>Background</a></li>
+            <li><a href='skills.html'>Skills</a></li>
+            <li><a href='personal_projects.html'>Personal Projects</a></li>
+            <li><a id="current" href='#'>Apply to me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="confirmation.html" name="application">
+            <label for="company-name">Company:</label><br>
+            <input type="text" id="company-name" required name="company-name"><br>
+
+            <label for="contact-num">Phone number:</label><br>
+            <input type="tel" id="contact-num" name="contact-num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                placeholder="123-456-7890"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <fieldset name="whereFound">
+                <Legend>Where did you find me?</Legend>
+                <label for="linkedIn">Linkedin</label>
+                <input type="radio" id="linkedIn" value="linkedIn" name="whereFound"><br>
+
+                <label for="application">Application</label>
+                <input type="radio" id="application" value="application" name="whereFound"><br>
+
+                <label for="referral">Referral</label>
+                <input type="radio" id="referral" value="referral" name="whereFound"><br>
+
+                <label for="recruiter">Recruiter</label>
+                <input type="radio" id="recruiter" value="recruiter" name="whereFound"><br>
+
+                <label for="other">Other</label>
+                <input type="radio" id="other" value='other' name="whereFound"><br>
+            </fieldset>
+            <label for="reqs-skills">What are the requirements for this position and desired skills?</label><br>
+            <textarea cols=28 rows=6 id="reqs-skills" name="reqs-skills"></textarea>
+            <br>
+            <button id='submit-button' type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Reach me here:</p>
+        <a href="#">Email</a><br>
+        <a href="https://www.linkedin.com/in/david-stracola/">LinkedIn</a>
+        <p>More about me:</p>
+        <a href="images/resume.webp">Resume</a><br>
+        <a href="https://github.com/dstraco">Github</a>
+    </footer>
+    <script src="js/contact_form_script.js"></script>
+</body>
+
+</html>

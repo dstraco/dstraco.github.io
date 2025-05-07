@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- David Stracola -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>David Stracola</title>
+    <link rel='stylesheet' href='styles/main.css'>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="David Stracola's personal website showcasing background, skills, and projects.">
+    <meta name="keywords"
+        content="David Stracola, Software Engineer, Systems Engineer, UNCW, Computer Science, Personal Project">
+
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: repeat(3, auto);
+            gap: 1.5rem;
+            color: var(--text);
+        }
+
+        main img {
+            max-width: 90%;
+            margin: .75rem auto;
+            height: auto;
+        }
+
+        div.project:nth-of-type(1) img {
+            margin: 2.5rem auto;
+            border-radius: 0.625rem;
+            box-shadow: .3rem .3rem .3rem .125rem rgb(118, 118, 118);
+            display: block;
+        }
+
+        img.phone-screen {
+            width: 20vw;
+        }
+
+        .project div {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='background.html'>Background</a></li>
+            <li><a href='skills.html'>Skills</a></li>
+            <li><a id="current" href='#'>Personal Projects</a></li>
+            <li><a href='contact_form.html'>Apply to me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="project">
+            <h2>Macro Tracker (Web Application)</h2>
+            <p>August 2022- December 2023</p><br>
+            <p class="indented">
+                After my initial introductory programming course I began my Macro Tracker web application
+                <a href="https://github.com/dstraco/MacroCalorieTracker.git"></a>. This project is still being
+                worked on although it has been one of the biggest driving forces in my personal learning. The
+                web-application serves as more of a proof of concept and was a means
+                to begin learning web-development and interacting with third-party APIs.<br><br>
+                Technologies used:<em>Python, Flask, HTML, CSS, JavaScript</em>
+            </p>
+            <img src="images/big3macroTracker.png" alt="website for calorie tracker">
+            <img src="images/searchResult.png" alt="results for a food search">
+
+        </div>
+
+        <div class="project">
+            <h2>Macro Mate (Mobile)</h2>
+            <p>September 2025-Current</p><br>
+            <p class="indented">
+                An application like a calorie tracker in modern society needs to be convenient to use to lower the
+                barrier for entry and encourage
+                consistent logging from the user.
+                I knew I wanted to have a mobile application for the calorie tracker and the Flutter framework
+                gave me an excellent learning oppertunity to implement a mobile version.<br><br>
+                Technologies used:<em>Dart, Flutter, xcode/ ios simulator</em>
+            </p>
+            <div>
+                <img src="images/homeScreen.png" class="phone-screen" alt="home screen">
+                <img src="images/addFood.png" class="phone-screen" alt="add food screen">
+            </div>
+            <div>
+                <img src="images/searchPreviousFoods.png" class="phone-screen" alt="search foods screen">
+                <img src="images/previousDays.png" class="phone-screen" alt="previous days logged screen">
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>Reach me here:</p>
+        <a href="#">Email</a><br>
+        <a href="https://www.linkedin.com/in/david-stracola/">LinkedIn</a>
+        <p>More about me:</p>
+        <a href="images/resume.webp">Resume</a><br>
+        <a href="https://github.com/dstraco">Github</a>
+    </footer>
+</body>
+
+</html>

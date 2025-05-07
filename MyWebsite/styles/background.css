@@ -1,0 +1,56 @@
+.experience img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    justify-self: center;
+    margin: 0 auto 2rem;
+}
+
+section,
+section:hover,
+section:focus {
+    box-shadow: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.experience:hover,
+.experience:focus {
+    box-shadow: .5rem .5rem .5rem .125rem;
+}
+
+
+section {
+    flex-direction: flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 1rem;
+    gap: 2rem;
+    justify-content: center;
+
+    & h2 {
+        text-wrap: nowrap;
+    }
+}
+
+.experience {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    margin: 0 2rem 2rem;
+    padding: .625rem;
+    box-shadow: .3rem .3rem .3rem .125rem rgb(118, 118, 118);
+}
+
+@media (max-height: 650px) {
+    .experience img {
+        height: 60vh;
+        object-fit: cover;
+    }
+}
